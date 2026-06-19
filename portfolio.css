@@ -184,13 +184,13 @@ nav ul li:not(:last-child)::after{
     height: 330px;
     width: 270px;
     border-radius: 5%;
-    box-shadow:0.5px 0.5px 10px #b0b3c8;
+    box-shadow: 10px 10px 0px #0A21C0;
     opacity:0.9;
     transition:  0.3s ease;
 
 }
 .right img:hover{
-    box-shadow: 10px 10px 0px #0A21C0;
+   
     opacity:1;
     transform:scale(1.1);
 
@@ -238,12 +238,10 @@ nav ul li:not(:last-child)::after{
     margin-top: 20px;
     transition: 0.3s ease;
 }
-
-
-
 .project{
     background-color: #ffffff;
     padding:30px;
+    margin-left: 60px;
     /* overflow-x: auto; */
 
 }
@@ -253,8 +251,8 @@ nav ul li:not(:last-child)::after{
     justify-content:flex-start;
     align-items:center;
     gap:1em;
-     border:1px solid rgb(0, 0, 0);
-    width:1200px;  
+    border:1px solid rgb(0, 0, 0);
+    width: 100vw; 
     margin:80px auto;
     overflow-x: auto;
 }
@@ -269,8 +267,6 @@ nav ul li:not(:last-child)::after{
     animation: spin 20s infinite linear;
     padding-right:1em;
 }
-
-
 .project-card{
     flex:0 0 25em;
     background-color: #cfcfcf ;
@@ -285,11 +281,114 @@ nav ul li:not(:last-child)::after{
     to{translate:-100%;}
 }
 .contact{
-    background-color: #edeeee;
-    width: 96%;
-    padding-left:30px ;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction: column;
+    width: 100vw;
+    gap:20px;
+    padding:20px;
+    background-color: #cfcfcf ;
+}
+.contact-container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    height:90vh;
+    width: 90vw;
+}
+.contact-left{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 50%;
+    height:70%;
+    margin: 20px;
+    padding: 20px;
+    gap:20px;
+}
+.phone{
+    display: flex;
+    color:#000000;
+    gap: 20px;
+    border-bottom: 1px solid rgb(142, 142, 142);
+    padding :30px; 
+}
+.email{
+    display: flex;
+    color:#000000;
+    gap: 20px;
+     border-bottom: 1px solid rgb(142, 142, 142);
+    padding :30px;
 }
 .icons-bottom{
     display: flex;
+    color:#000000;
     gap: 20px;
+   
+    padding :30px;
+}
+.contact-right{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:50%;
+    height:70%;
+    margin: 20px;
+    padding: 20px;
+}  
+.form{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    gap:30px;
+    padding:30px;
+    box-shadow: 10px 10px 0px #0A21C0;
+
+    
+} 
+.form form{
+    width:90%;
+    padding:30px;
+    height: 100%;
+    width: 90%;
+    border-radius:15px;
+    display:flex;
+    flex-direction: column;
+    align-items:stretch;
+    gap:20px;
+    
+} 
+label{
+    position: static;
+    transform: none;
+    margin: 0;
+    align-self:flex-start;
+}
+.form-input {
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #999;
+    padding: 10px 0;
+    margin-bottom: 25px;
+    outline: none;
+}
+textarea {
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #999;
+    resize: none;
+    outline: none;
+}
+.footer{
+    margin-top: 20px;
+    padding: 20px;
 }
