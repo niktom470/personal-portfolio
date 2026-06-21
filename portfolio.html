@@ -19,17 +19,19 @@
              </div>
 
             <ul id="mobile-menu">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     
     <div class="container">
-        <div class="intro">
+        <section  id="home">
+            <div class="intro">
             <div class="center">
                 <div class="left">
-                    <div class="top">
+                    <div class="top ani">
                         <h1>Hello, I'm Nikhil</h1>
                         <p>
                             Second-year CSE student interested in backend development.
@@ -37,219 +39,218 @@
                             Learning FastAPI, DSA, and building projects.
                         </p>
                     </div>
-                    <div class="bottom">
-                        <button id="project-button">
-                            <a href="">View Projects</a>
-                        </button>
-                        <button id="contact-button">
-                            <a href="">Contact Me</a>
-                        </button>
-                     </div>
+                    <div class="bottom ani">
+                            <a href="#projects" id="project-button">View Projects</a>
+                       
+                            <a href="#contact" id="contact-button">Contact Me</a>
+                    </div>
                 </div>
-                <div class="right">
+                <div class="right ani">
                     <img src="./PASSPORT PHOTO black.jpg" alt="Nikhil's Photo">
                 </div>
             </div>
         </div>
-        <div class="skills">
-            <h1>Skills</h1>
-        <div class="skills-container">
-                <div class="html skill-card ">
-                    <h3>HTML</h3>
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-plain.svg" />
-          </div>
-                <div class="css skill-card">
-                    <h3>CSS</h3>
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-plain.svg" />
-          </div>
-                <div class="javascript skill-card">
-                    <h3>JavaScript</h3>
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-plain.svg" />
-          </div>
-                <div class="react skill-card">
-                    <h3>React</h3>
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" />
-          </div>
-                <div class="cpp skill-card">
-                    <h3>C++</h3>
-             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-plain.svg" />
-          </div>
-        </div>
-        </div>
-        <div class="project">
-            <h1>Projects</h1>
-            <div class="project-container">
-                <div class="group">
-                    <div class="project-card">
-                        <div class="project-image">
-                            <img src="https://via.placeholder.com/300x200" alt="Project 1">
+        </section>
+        <section id="skills">
+              <div class="skills" >
+                        <h1>Skills</h1>
+                    <div class="skills-container ani">
+                            <div class="html skill-card ">
+                                <h3>HTML</h3>
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-plain.svg" />
+                    </div>
+                            <div class="css skill-card">
+                                <h3>CSS</h3>
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-plain.svg" />
+                    </div>
+                            <div class="javascript skill-card">
+                                <h3>JavaScript</h3>
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-plain.svg" />
+                    </div>
+                            <div class="react skill-card">
+                                <h3>React</h3>
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" />
+                    </div>
+                            <div class="cpp skill-card">
+                                <h3>C++</h3>
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-plain.svg" />
+                    </div>
+                    </div>
+              </div>
+        </section>
+        <section id="projects">
+            <div class="project" >
+                <h1>Projects</h1>
+                <div class="project-container">
+                    <div class="group ani">
+                        <div class="project-card">
+                            <div class="project-image">
+                                <img src="https://via.placeholder.com/300x200" alt="Project 1">
+                            </div>
+                            <div class="card-content">
+                                <h3>Project Title 1</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel sapien augue.</p>
+                                <p>technology</p>
+                                <button class="project-git-button">
+                                    <a href="https://github.com" target="_blank">View on GitHub</a>
+                                </button>
+                            </div>
                         </div>
-                        <div class="card-content">
-                            <h3>Project Title 1</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel sapien augue.</p>
-                            <p>technology</p>
-                            <button class="project-git-button">
-                                <a href="https://github.com" target="_blank">View on GitHub</a>
-                            </button>
+                        <div class="project-card">
+                            <div class="project-image">
+                                <img src="https://via.placeholder.com/300x200" alt="Project 1">
+                            </div>
+                            <div class="card-content">
+                                <h3>Project Title 2</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel sapien augue.</p>
+                                <p>technology</p>
+                                <button class="project-git-button">
+                                    <a href="https://github.com" target="_blank">View on GitHub</a>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="project-card">
+                            <div class="project-image">
+                                <img src="https://via.placeholder.com/300x200" alt="Project 1">
+                            </div>
+                            <div class="card-content">
+                                <h3>Project Title 3</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel sapien augue.</p>
+                                <p>technology</p>
+                                <button class="project-git-button">
+                                    <a href="https://github.com" target="_blank">View on GitHub</a>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="project-card">
+                            <div class="project-image">
+                                <img src="https://via.placeholder.com/300x200" alt="Project 1">
+                            </div>
+                            <div class="card-content">
+                                <h3>Project Title 4</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel sapien augue.</p>
+                                <p>technology</p>
+                                <button class="project-git-button">
+                                    <a href="https://github.com" target="_blank">View on GitHub</a>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="project-card">
+                            <div class="project-image">
+                                <img src="https://via.placeholder.com/300x200" alt="Project 1">
+                            </div>
+                            <div class="card-content">
+                                <h3>Project Title 5</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel sapien augue.</p>
+                                <p>technology</p>
+                                <button class="project-git-button">
+                                    <a href="https://github.com" target="_blank">View on GitHub</a>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="project-card">
+                            <div class="project-image">
+                                <img src="https://via.placeholder.com/300x200" alt="Project 1">
+                            </div>
+                            <div class="card-content">
+                                <h3>Project Title 6</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel sapien augue.</p>
+                                <p>technology</p>
+                                <button class="project-git-button">
+                                    <a href="https://github.com" target="_blank">View on GitHub</a>
+                                </button>
+                            </div>
                         </div>
                     </div>
-                    <div class="project-card">
-                        <div class="project-image">
-                            <img src="https://via.placeholder.com/300x200" alt="Project 1">
+                    <div aria hidden class="group ani">
+                        <div class="project-card">
+                            <div class="project-image">
+                                <img src="https://via.placeholder.com/300x200" alt="Project 1">
+                            </div>
+                            <div class="card-content">
+                                <h3>Project Title 1</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel sapien augue.</p>
+                                <p>technology</p>
+                                <button class="project-git-button">
+                                    <a href="https://github.com" target="_blank">View on GitHub</a>
+                                </button>
+                            </div>
                         </div>
-                        <div class="card-content">
-                            <h3>Project Title 2</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel sapien augue.</p>
-                            <p>technology</p>
-                            <button class="project-git-button">
-                                <a href="https://github.com" target="_blank">View on GitHub</a>
-                            </button>
+                        <div class="project-card">
+                            <div class="project-image">
+                                <img src="https://via.placeholder.com/300x200" alt="Project 1">
+                            </div>
+                            <div class="card-content">
+                                <h3>Project Title 2</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel sapien augue.</p>
+                                <p>technology</p>
+                                <button class="project-git-button">
+                                    <a href="https://github.com" target="_blank">View on GitHub</a>
+                                </button>
+                            </div>
                         </div>
-                    </div>
-                    <div class="project-card">
-                        <div class="project-image">
-                            <img src="https://via.placeholder.com/300x200" alt="Project 1">
+                        <div class="project-card">
+                            <div class="project-image">
+                                <img src="https://via.placeholder.com/300x200" alt="Project 1">
+                            </div>
+                            <div class="card-content">
+                                <h3>Project Title 3</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel sapien augue.</p>
+                                <p>technology</p>
+                                <button class="project-git-button">
+                                    <a href="https://github.com" target="_blank">View on GitHub</a>
+                                </button>
+                            </div>
                         </div>
-                        <div class="card-content">
-                            <h3>Project Title 3</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel sapien augue.</p>
-                            <p>technology</p>
-                            <button class="project-git-button">
-                                <a href="https://github.com" target="_blank">View on GitHub</a>
-                            </button>
+                        <div class="project-card">
+                            <div class="project-image">
+                                <img src="https://via.placeholder.com/300x200" alt="Project 1">
+                            </div>
+                            <div class="card-content">
+                                <h3>Project Title 4</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel sapien augue.</p>
+                                <p>technology</p>
+                                <button class="project-git-button">
+                                    <a href="https://github.com" target="_blank">View on GitHub</a>
+                                </button>
+                            </div>
                         </div>
-                    </div>
-                    <div class="project-card">
-                        <div class="project-image">
-                            <img src="https://via.placeholder.com/300x200" alt="Project 1">
+                        <div class="project-card">
+                            <div class="project-image">
+                                <img src="https://via.placeholder.com/300x200" alt="Project 1">
+                            </div>
+                            <div class="card-content">
+                                <h3>Project Title 5</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel sapien augue.</p>
+                                <p>technology</p>
+                                <button class="project-git-button">
+                                    <a href="https://github.com" target="_blank">View on GitHub</a>
+                                </button>
+                            </div>
                         </div>
-                        <div class="card-content">
-                            <h3>Project Title 4</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel sapien augue.</p>
-                            <p>technology</p>
-                            <button class="project-git-button">
-                                <a href="https://github.com" target="_blank">View on GitHub</a>
-                            </button>
-                        </div>
-                    </div>
-                    <div class="project-card">
-                        <div class="project-image">
-                            <img src="https://via.placeholder.com/300x200" alt="Project 1">
-                        </div>
-                        <div class="card-content">
-                            <h3>Project Title 5</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel sapien augue.</p>
-                            <p>technology</p>
-                            <button class="project-git-button">
-                                <a href="https://github.com" target="_blank">View on GitHub</a>
-                            </button>
-                        </div>
-                    </div>
-                    <div class="project-card">
-                        <div class="project-image">
-                            <img src="https://via.placeholder.com/300x200" alt="Project 1">
-                        </div>
-                        <div class="card-content">
-                            <h3>Project Title 6</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel sapien augue.</p>
-                            <p>technology</p>
-                            <button class="project-git-button">
-                                <a href="https://github.com" target="_blank">View on GitHub</a>
-                            </button>
+                        <div class="project-card">
+                            <div class="project-image">
+                                <img src="https://via.placeholder.com/300x200" alt="Project 1">
+                            </div>
+                            <div class="card-content">
+                                <h3>Project Title 6</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel sapien augue.</p>
+                                <p>technology</p>
+                                <button class="project-git-button">
+                                    <a href="https://github.com" target="_blank">View on GitHub</a>
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div aria hidden class="group">
-                    <div class="project-card">
-                        <div class="project-image">
-                            <img src="https://via.placeholder.com/300x200" alt="Project 1">
-                        </div>
-                        <div class="card-content">
-                            <h3>Project Title 1</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel sapien augue.</p>
-                            <p>technology</p>
-                            <button class="project-git-button">
-                                <a href="https://github.com" target="_blank">View on GitHub</a>
-                            </button>
-                        </div>
-                    </div>
-                    <div class="project-card">
-                        <div class="project-image">
-                            <img src="https://via.placeholder.com/300x200" alt="Project 1">
-                        </div>
-                        <div class="card-content">
-                            <h3>Project Title 2</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel sapien augue.</p>
-                            <p>technology</p>
-                            <button class="project-git-button">
-                                <a href="https://github.com" target="_blank">View on GitHub</a>
-                            </button>
-                        </div>
-                    </div>
-                    <div class="project-card">
-                        <div class="project-image">
-                            <img src="https://via.placeholder.com/300x200" alt="Project 1">
-                        </div>
-                        <div class="card-content">
-                            <h3>Project Title 3</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel sapien augue.</p>
-                            <p>technology</p>
-                            <button class="project-git-button">
-                                <a href="https://github.com" target="_blank">View on GitHub</a>
-                            </button>
-                        </div>
-                    </div>
-                    <div class="project-card">
-                        <div class="project-image">
-                            <img src="https://via.placeholder.com/300x200" alt="Project 1">
-                        </div>
-                        <div class="card-content">
-                            <h3>Project Title 4</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel sapien augue.</p>
-                            <p>technology</p>
-                            <button class="project-git-button">
-                                <a href="https://github.com" target="_blank">View on GitHub</a>
-                            </button>
-                        </div>
-                    </div>
-                    <div class="project-card">
-                        <div class="project-image">
-                            <img src="https://via.placeholder.com/300x200" alt="Project 1">
-                        </div>
-                        <div class="card-content">
-                            <h3>Project Title 5</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel sapien augue.</p>
-                            <p>technology</p>
-                            <button class="project-git-button">
-                                <a href="https://github.com" target="_blank">View on GitHub</a>
-                            </button>
-                        </div>
-                    </div>
-                    <div class="project-card">
-                        <div class="project-image">
-                            <img src="https://via.placeholder.com/300x200" alt="Project 1">
-                        </div>
-                        <div class="card-content">
-                            <h3>Project Title 6</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel sapien augue.</p>
-                            <p>technology</p>
-                            <button class="project-git-button">
-                                <a href="https://github.com" target="_blank">View on GitHub</a>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-              
             </div>
-            
-            <div></div>
-
-        </div>
-        <div class="contact">
+        </section>
+        <section id="contact">
+            <div class="contact" >
             <h3>CONTACT ME</h3>
             <div class="contact-container">
                 <div class="contact-left">
-                    <div class="phone">
+                    <div class="phone ani">
                     <i class="fa-solid fa-phone"></i>
                     <div class="desc">
                         <h5>Phone</h5>
@@ -257,14 +258,14 @@
                     </div>
                      
                     </div>
-                    <div class="email">
+                    <div class="email ani">
                         <i class="fa-solid fa-envelope"></i>
                         <div class="desc">
                             <h5>Email</h5>
                             <p>nikhiltomar@example.com</p>
                         </div>
                     </div>
-                    <div class="icons-bottom">
+                    <div class="icons-bottom ani">
                         <a href="www.linkedin.com/in/nikhil-tomar-595440312">
                         <i class="fa-brands fa-linkedin"></i>
                         </a>
@@ -277,7 +278,7 @@
                     </div>
                 </div>
                 <div class="contact-right">
-                    <div class="form">
+                    <div class="form ani">
                         <h4>Send Message</h4>
                         <form action="">
                             <label for="Full Name">Full Name</label>
@@ -293,12 +294,12 @@
                 </div>
                
             </div>
-            
-           
         </div>
-       <div class="footer">
-        <p>&copy; 2024 Nikhil Tomar. All rights reserved.</p>
-    </div>
+        </section>
+        
+        <div class="footer">
+            <p>&copy; 2024 Nikhil Tomar. All rights reserved.</p>
+        </div>
     </div>
     <script src="portfolio.js"></script>
 </body>
