@@ -1,8 +1,19 @@
+//hamburger menu
 const menuBtn = document.querySelector(".menu-btn");
 const navMenu = document.querySelector("nav ul");
+const menuIcon = document.querySelector(".menu-btn i");
 
 menuBtn.addEventListener("click", () => {
     navMenu.classList.toggle("active");
+      if(navMenu.classList.contains("active")){
+        menuIcon.classList.remove("fa-bars");
+        menuIcon.classList.add("fa-xmark");
+        menuIcon.classList.add("showButton");
+    }else{
+        menuIcon.classList.remove("fa-xmark");
+        menuIcon.classList.remove("showButton");
+        menuIcon.classList.add("fa-bars");
+    }
 });
 // document.querySelectorAll('a[href^="#"]').forEach(link => {
 //     link.addEventListener("click", function(e) {
