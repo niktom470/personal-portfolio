@@ -280,14 +280,15 @@
                 <div class="contact-right">
                     <div class="form ani">
                         <h4>Send Message</h4>
-                        <form action="">
+                        <form action="" id="contact-form">
                             <label for="Full Name">Full Name</label>
-                            <input type="text" class="form-input">
+                            <input type="text" class="form-input" id="name"/>
                             <label for="Email">Email</label>
-                            <input type="email" class="form-input">
+                            <input type="email" class="form-input" id="email"/>
                             <label for="Message">Type Your Message..</label>
-                            <input type="text" class="form-input">
+                             <textarea id="message"></textarea>
                             <button type="submit" class="form-button">Send</button>
+                            <p id="status"></p>
                         </form>
 
                     </div>
@@ -301,6 +302,13 @@
             <p>&copy; 2024 Nikhil Tomar. All rights reserved.</p>
         </div>
     </div>
+     <script
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script>
+        emailjs.init("jbURMZLy3vilo8QMJ");
+    </script>
     <script src="portfolio.js"></script>
+   
 </body>
 </html>
