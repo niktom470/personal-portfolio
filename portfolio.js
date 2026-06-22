@@ -60,3 +60,57 @@ const observer = new IntersectionObserver((entries)=>{
 },{});
 const webElements = document.querySelectorAll(".ani");
 webElements.forEach(el=>observer.observe(el)); 
+
+//send message confirmation
+
+const form = document.getElementById("contact-form");
+const sendButton = document.querySelector('.form-button');
+const status = document.getElementById('status');
+
+form.addEventListener("submit",(e)=>{
+    e.preventDefault();
+
+    const name = document.getElementById("name").value.trim();
+    const email = document.getElementById("email").value.trim();
+    const message = document.getElementById("message").value.trim();
+
+    if(!email || !name || !message){
+        status.textContent = "Please fill fields.";
+            
+            setTimeout(() => {
+                status.textContent = "";
+            }, 3000);
+
+    return;
+    }
+     status.textContent = "Sending...";
+     sendButton.disabled = true;
+      console.log(name, email, message);
+      console.log("Before emailjs");
+    emailjs.send(
+        "service_w37x0jw",
+        "template_ot2197a",
+        {
+            from_name: name,
+            from_email: email,
+            message: message
+        }
+        
+    ).then(() => {
+           console.log("Email sent");
+            status.textContent = "Message sent successfully!";
+            form.reset();
+            sendButton.disabled = false;
+
+        }).catch(() => {
+            console.log(error);
+            status.textContent = "Failed to send message.";
+            sendButton.disabled = false;
+
+        });
+
+    setTimeout(() => {
+    status.textContent = "";
+    }, 3000);
+
+});
